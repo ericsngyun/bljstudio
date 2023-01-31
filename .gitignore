@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+animation_ideas
 
 # Editor directories and files
 .vscode/*
