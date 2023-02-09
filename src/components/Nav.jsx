@@ -6,14 +6,15 @@ const Nav = () => {
 
   return (
     <div className = "nav">
-      <div className="nav-container">
+      <div className="nav-container">   
         <div className="navbar">
-          <div className="logo">eric yun</div>
+          <div className= {navOpen ? "logo caret-transparent text-[#fff]" : "logo caret-transparent"}>
+            ERIC YUN</div>
           <div className="menu-toggle" onClick = {() => setNavOpen(!navOpen)}>
-            <div className= {navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
-              <span className = {navOpen ? "lineTop spin" : "lineTop"}>
+            <div className = {navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
+              <span className = {navOpen ? "lineTop spin bg-[#18181c]" : "lineTop"}>
               </span>
-              <span className = {navOpen ? "lineBottom spin" : "lineBottom"}>
+              <span className = {navOpen ? "lineBottom spin bg-[#18181c]" : "lineBottom"}>
               </span>
             </div>
           </div>
@@ -22,7 +23,7 @@ const Nav = () => {
           top: navOpen ? "0" : "-100%",
           transitionDelay: navOpen ? "0s" : "0s"
         }}></div>
-      </div>
+      </div>                            
     </div>
   )
 }
