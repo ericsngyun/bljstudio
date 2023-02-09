@@ -1,12 +1,14 @@
 import { useState } from 'react'
-import './App.css'
+import IntroScreen from './components/IntroScreen'
+import Home from './components/Home'
+import './index.css'
 
 function App() {
 
   return (
-    <div className = "grid h-screen place-items-center">
-      <h1 className = "text-4xl">Brian Jeong</h1>
-    </div>
+    <>
+      <Home />
+    </>
   )
 }
 
