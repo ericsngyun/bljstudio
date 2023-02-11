@@ -45,7 +45,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  border-radius: 25%;
+  border-radius: 40%;
   transition: 0.3s ease;
   padding: 2.4em;
   background: #18181c;
@@ -53,7 +53,7 @@
 }
 
 .hamBox:hover {
-  background: #c1c1c6;
+  background: #565658;
 
   
 }
@@ -62,11 +62,11 @@
   background: #fff;
 }
 
-.lineTop, .lineBottom {
+.lineTop, .lineBot {
   margin: 0 auto;
   position: absolute;
   display: block;
-  width: 24px;
+  width: 26px;
   height: 2px;
   border-radius: 10px;
   background: #fff;
@@ -80,18 +80,18 @@
   top: 2.2em;
 }
 
-.lineTop .spin {
+.lineTop.spin {
   top: 2.35em;
   transform: rotate(135deg);
   background: #18181c;
 }
 
-.lineBottom {
+.lineBot {
   bottom: 2.2em;
 } 
 
-.lineBotton .spin {
+.lineBot.spin {
   bottom: 2.35em;                         
-  transform: rotate(225deg);  
+  transform: rotate(235deg);  
   background: #18181c;
 }

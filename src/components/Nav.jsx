@@ -14,7 +14,7 @@ const Nav = () => {
             <div className = {navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
               <span className = {navOpen ? "lineTop spin bg-[#18181c]" : "lineTop"}>
               </span>
-              <span className = {navOpen ? "lineBottom spin bg-[#18181c]" : "lineBottom"}>
+              <span className = {navOpen ? "lineBot spin bg-[#18181c]" : "lineBot"}>
               </span>
             </div>
           </div>
