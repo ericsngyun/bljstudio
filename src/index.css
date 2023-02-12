@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: JustSans;
+  src: url(/fonts/JustSans.otf) format("opentype");
+}
+@font-face {
+  font-family: WixReg;
+  src: url(WixRegular.ttf);
+}
 
 html, body {
   background: #fff;
   color: #18181c;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
