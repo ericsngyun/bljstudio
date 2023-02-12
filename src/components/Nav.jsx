@@ -23,35 +23,39 @@ const Nav = () => {
         <div className="nav-overlay" style = {{
           top: navOpen ? "0" : "-100%",
           transitionDelay: navOpen ? "0s" : "0s"
-        }}></div>
-        <ul className = "nav-links">
-          <li className = "nav-item">
-            <Link to ="/">Home</Link>  
-            <div className='nav-item-wrapper'></div>
-          </li>
-          <li className = "nav-item">
-            <Link to ="/projects">Projects</Link>  
-            <div className='nav-item-wrapper'></div>
-          </li>
-          <li className = "nav-item">
-            <Link to ="/aboutme">About</Link>  
-            <div className='nav-item-wrapper'></div>
-          </li>
-          <li className = "nav-item">
-            <Link to ="/contact">Contact</Link>  
-            <div className='nav-item-wrapper'></div>
-          </li>
-        </ul>
-        <div className = "nav-footer">
-          <div className="location">
-            <span>Los Angeles, CA</span>
-          </div>
-          <div className="nav-social-media">
-            <ul>
-              <li>
-                <a href="#" target={'_blank'}>YouTube</a>
-              </li>
-            </ul>
+        }}>
+          <ul className = "nav-links text-[#fff]">
+            <li className = "nav-item">
+              <Link to ="/">Home</Link>  
+              <div className='nav-item-wrapper'></div>
+            </li>
+            <li className = "nav-item">
+              <Link to ="/projects">Projects</Link>  
+              <div className='nav-item-wrapper'></div>
+            </li>
+            <li className = "nav-item">
+              <Link to ="/aboutme">About</Link>  
+              <div className='nav-item-wrapper'></div>
+            </li>
+            <li className = "nav-item">
+              <Link to ="/contact">Contact</Link>  
+              <div className='nav-item-wrapper'></div>
+            </li>
+          </ul>
+          <div className = "nav-footer text-[#fff]">
+            <div className="location">
+              <span>Los Angeles, CA</span>
+            </div>
+            <div className="nav-social-media">
+              <ul>
+                <li>
+                  <a href="#" target={'_blank'}>YouTube</a>
+                </li>
+                <li>
+                  <a href="#" target={'_blank'}>Instagram</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>                            
