@@ -26,7 +26,10 @@ const Nav = () => {
         }}>
           <ul className = "nav-links text-[#fff]">
             <li className = "nav-item">
-              <Link to ="/">Home</Link>  
+              <Link to ="/" onClick = {() => setNavOpen(!navOpen)} style = {{
+                top: navOpen ? "0" : "120px",
+                transitionDelay: navOpen ? "0.8s" : "0s"
+              }}>Home</Link>  
               <div className='nav-item-wrapper'></div>
             </li>
             <li className = "nav-item">
