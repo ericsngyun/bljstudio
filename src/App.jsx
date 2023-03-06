@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import IntroScreen from './components/IntroScreen'
-import Home from './components/Home'
+import Home from './pages/Home'
 import './index.css'
+import Intro from './components/IntroScreen'
 
 function App() {
 
   return (
     <>
-      <Home />
+      <Intro/>
+      {/* <Home /> */}
     </>
   )
 }
