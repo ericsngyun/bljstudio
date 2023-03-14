@@ -5,7 +5,9 @@ import './intro.css'
 
 const IntroScreen = () => {
   useEffect(() => {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline(
+
+    );
 
     tl.from(".letter", {
       y: -20,
@@ -45,8 +47,7 @@ const IntroScreen = () => {
 
   return (
     <div className="container">
-      <Home />
-      <div className="wrapper">
+        <div className="wrapper">
         <div className="copy">
           <p>
             LA 09123, <br /> TYO 2398

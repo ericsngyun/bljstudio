@@ -10,7 +10,7 @@ function App() {
       {/* <BrowserRouter>
       </BrowserRouter> */}
       <IntroScreen/>
-      <Home />
+      {/* <Home /> */}
       
     </>
   )
