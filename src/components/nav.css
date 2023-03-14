@@ -1,25 +1,9 @@
-@font-face {
-  font-family: JustSans;
-  src: url(/fonts/JustSans.otf) format("opentype");
-}
-@font-face {
-  font-family: WixReg;
-  src: url(/fonts/WixMadeforDisplay-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
 
-@font-face {
-  font-family: WixDisplayBold;
-  src: url(/fonts/WixDisplayBold.ttf);
-}
+@taiwind base;
+@tailwind components;
+@tailwind utilities;
 
-@font-face {
-  font-family: SublimaBold;
-  src: url(/fonts/Sublima-ExtraBold.otf) format("opentype");
-}
-@font-face {
-  font-family: SublimaLight;
-  src: url(/fonts/Sublima-Light.otf) format("opentype");
-}
 
 .nav {
   position: fixed;
@@ -41,9 +25,9 @@
   text-decoration: none;
   margin-left: 1em;
   color: #18181c;
-  font-family: SublimaBold;
-  font-weight: 'bolder';
-  font-size: xx-large;
+  font-family: Inter, sans-serif;
+  font-weight: 'bold';
+  font-size: 80px;
 }
 
 .menu-toggle {
@@ -121,7 +105,7 @@
 }
 
 ul.nav-links {
-  font-family:SublimaLight;
+  font-family: Inter, sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -142,7 +126,7 @@ ul.nav-links li {
 ul.nav-links li a {
   text-decoration: none;
   color: #fff;
-  font-family: SublimaBold;
+  font-family: Inter, sans-serif;
   font-size: 4em;
   position: relative;
   top: 0;
@@ -182,7 +166,7 @@ ul.nav-links li a {
   position: relative;
   bottom: -20px;
   text-decoration: none;
-  font-family: SublimaBold;
+  font-family: Inter, sans-serif;
   color: #fff;
   text-transform: uppercase;
   padding-left: 2em;
@@ -195,7 +179,7 @@ ul.nav-links li a {
   bottom: -20px;
   opacity: 0;
   transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-  font-family: SublimaBold;
+  font-family: Inter, sans-serif;
   text-transform: uppercase;
 }
 

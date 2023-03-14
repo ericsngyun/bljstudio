@@ -1,56 +1,51 @@
 import React, { useEffect } from "react";
-import gsap from "gsap";
-import Home from "./Home";
-import '../index.css'
+import { gsap } from "gsap";
+import Home from "../Home";
+import './intro.css'
 
 const IntroScreen = () => {
   useEffect(() => {
-    gsap.from(".letter", 0.8, {
+    const tl = gsap.timeline();
+
+    tl.from(".letter", {
       y: -20,
       opacity: 0,
       ease: "power3.inOut",
       stagger: 0.1,
-    });
-    gsap.to(".top-left, .top-right", 2, {
-      top: "0",
-      ease: "power3.inOut",
-      delay: 2,
-    });
-    gsap.to(".bottom-right, .top-right", 2, {
-      bottom: "0",
-      ease: "power3.inOut",
-      delay: 2,
-    });
-    gsap.to(".top-left", 2, {
-      left: "0",
-      ease: "power3.inOut",
-      delay: 4,
-    });
-    gsap.to(".top-right", 2, {
-      right: "0",
-      ease: "power3.inOut",
-      delay: 4,
-    });
-    gsap.to(".bottom-right", 2, {
-      right: "0",
-      ease: "power3.inOut",
-      delay: 4,
-    });
-    gsap.to(".block-left", 2, {
-      left: "-50%",
-      ease: "power3.inOut",
-      delay: 4,
-    });
-    gsap.to(".block-right", 2, {
-      right: "-50%",
-      ease: "power3.inOut",
-      delay: 4,
-    });
+    })
+      .to(".top-left, .top-right", {
+        top: "0",
+        ease: "power3.inOut",
+      })
+      .to(".bottom-right, .top-right", {
+        bottom: "0",
+        ease: "power3.inOut",
+      }, "<")
+      .to(".top-left", {
+        left: "0",
+        ease: "power3.inOut",
+      }, "<")
+      .to(".top-right", {
+        right: "0",
+        ease: "power3.inOut",
+      }, "<")
+      .to(".bottom-right", {
+        right: "0",
+        ease: "power3.inOut",
+      }, "<")
+      .to(".block-left", {
+        left: "-50%",
+        ease: "power3.inOut",
+      }, "<")
+      .to(".block-right", {
+        right: "-50%",
+        ease: "power3.inOut",
+      }, "<");
   }, []);
 
   return (
     <div className="container">
-      <Home/>
+      <Home />
       <div className="wrapper">
         <div className="copy">
           <p>
