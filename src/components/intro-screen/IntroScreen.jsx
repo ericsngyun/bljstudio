@@ -1,23 +1,11 @@
-<<<<<<< HEAD:src/components/intro-screen/IntroScreen.jsx
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import Home from "../Home";
-import './intro.css'
-=======
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import Home from "../pages/Home";
+import './intro.css';
 
-const Intro = () => {
-  const [showIntro, setShowIntro] = useState(true);
-  const [showHome, setShowHome] = useState(false);
->>>>>>> 6bf0b53a934f5636eeba25c9eb65afbcfc43218c:src/components/IntroScreen.jsx
-
+export default function IntroScreen() {
+  console.log(gsap);
   useEffect(() => {
-<<<<<<< HEAD:src/components/intro-screen/IntroScreen.jsx
-    const tl = gsap.timeline(
-
-    );
+    const tl = gsap.timeline();
 
     tl.from(".letter", {
       y: -20,
@@ -57,7 +45,7 @@ const Intro = () => {
 
   return (
     <div className="container">
-        <div className="wrapper">
+      <div className="wrapper">
         <div className="copy">
           <p>
             LA 09123, <br /> TYO 2398
@@ -84,42 +72,5 @@ const Intro = () => {
         </div>
       </div>
     </div>
-=======
-    // fade out intro screen and fade in home page after 3 seconds
-    setTimeout(() => {
-      setShowIntro(false);
-      setShowHome(true);
-    }, 3000);
-  }, []);
-
-  return (
-    <>
-      {showIntro && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100vh",
-            backgroundColor: "#18181c",
-          }}
-        >
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <h1 className = "text-8xl text-[#fff]">ERIC YUN</h1>
-          </motion.h1>
-        </motion.div>
-      )}
-      {showHome && <Home />}
-    </>
->>>>>>> 6bf0b53a934f5636eeba25c9eb65afbcfc43218c:src/components/IntroScreen.jsx
   );
-};
-
-export default Intro;
+}
