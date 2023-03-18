@@ -3,17 +3,17 @@ import { gsap } from "gsap";
 import './intro.css';
 
 export default function IntroScreen() {
-  console.log(gsap);
+  // console.log(gsap);
   useEffect(() => {
     const tl = gsap.timeline();
 
-    tl.from(".letter", {
-      y: -20,
-      opacity: 0,
-      ease: "power3.inOut",
-      stagger: 0.1,
-    })
-      .to(".top-left, .top-right", {
+      tl.from(".letter", {
+        y: -20,
+        opacity: 0,
+        ease: "power3.inOut",
+        stagger: 0.1,
+      })
+      tl.to(".top-left, .top-right", {
         top: "0",
         ease: "power3.inOut",
       })
@@ -45,6 +45,9 @@ export default function IntroScreen() {
 
   return (
     <div className="container">
+      <div>
+        test
+      </div>
       <div className="wrapper">
         <div className="copy">
           <p>
